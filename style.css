@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background: #12121a;
+    font-family: system-ui, sans-serif;
+  color: #fff;
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+}
+
+.card__face {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 16px;
+  font-size: 2rem;
+}
+
+.card__face--front {
+  background: #3b82f6;
+}
+
+.card__face--back {
+  background: #ef4444;
+}
