@@ -21,7 +21,8 @@ body{
   position: relative;
   width: 300px;
   height: 400px;
-  transform: rotateY(45deg);
+  transform-style: preserve-3d;
+  transform: rotateY(0deg);
 }
 
 .card__face {
@@ -31,6 +32,7 @@ body{
   place-items: center;
   border-radius: 16px;
   font-size: 2rem;
+  backface-visibility: hidden;
 }
 
 .card__face--front {
@@ -39,4 +41,5 @@ body{
 
 .card__face--back {
   background: #ef4444;
+  transform: rotateY(180deg);
 }
