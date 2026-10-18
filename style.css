@@ -22,7 +22,12 @@ body{
   width: 300px;
   height: 400px;
   transform-style: preserve-3d;
-  transform: rotateY(0deg);
+  transition: transform 0.8s cubic-bezier(0.34, 1.26, 0.64, 1); 
+  cursor: pointer;
+}
+
+.card:hover{
+    transform: rotateY(180deg);
 }
 
 .card__face {
